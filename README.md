@@ -1,3 +1,19 @@
+<div align="center">
+
+# 📢 Shopify Announcement Manager
+
+A Shopify Embedded App built with the **MERN Stack** that allows merchants to create announcements from the Shopify Admin dashboard, stores them in **MongoDB**, synchronizes them with **Shopify Shop Metafields** using the **GraphQL Admin API**, and displays them on the storefront through a **Theme App Extension**.
+
+![Shopify](https://img.shields.io/badge/Shopify-App-95BF47?style=for-the-badge&logo=shopify&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb)
+![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql)
+
+</div>
+
+---
+
 # 📢 Shopify Announcement Manager App
 
 A full-stack **Shopify Embedded App** built with the **MERN Stack** that allows merchants to create announcements from the Shopify Admin dashboard, stores them in **MongoDB** for audit history, syncs them to **Shopify Shop Metafields** using the **GraphQL Admin API**, and displays them on the storefront through a **Theme App Extension**.
@@ -115,9 +131,9 @@ Before running the project, make sure you have:
 ## 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/shopify-announcement-manager.git
+git clone https://github.com/Aqib1239/shopify-announcement.git
 
-cd shopify-announcement-manager
+cd shopify-announcement
 ```
 
 ---
