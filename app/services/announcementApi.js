@@ -1,4 +1,4 @@
-const API = 'http://localhost:5000/api/announcement';
+const API = 'https://shopify-announcement-backend.onrender.com/api/announcement';
 
 export async function createAnnouncement(text) {
     const res = await fetch(API, {
