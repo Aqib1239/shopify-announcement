@@ -14,11 +14,6 @@ A Shopify Embedded App built with the **MERN Stack** that allows merchants to cr
 
 ---
 
-# 📢 Shopify Announcement Manager App
-
-A full-stack **Shopify Embedded App** built with the **MERN Stack** that allows merchants to create announcements from the Shopify Admin dashboard, stores them in **MongoDB** for audit history, syncs them to **Shopify Shop Metafields** using the **GraphQL Admin API**, and displays them on the storefront through a **Theme App Extension**.
-
----
 
 ## ✨ Features
 
