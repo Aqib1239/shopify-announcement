@@ -6,9 +6,7 @@ export async function action({ request }) {
 
     const body = await request.json();
 
-    // -----------------------------
     // Save to MongoDB
-    // -----------------------------
     const mongoResponse = await fetch(
       "http://localhost:5000/api/announcement",
       {
@@ -17,14 +15,12 @@ export async function action({ request }) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(body),
-      }
+      },
     );
 
     const mongoResult = await mongoResponse.json();
 
-    // -----------------------------
     // Get Shop ID
-    // -----------------------------
     const shopResponse = await admin.graphql(`
       query {
         shop {
@@ -39,9 +35,7 @@ export async function action({ request }) {
 
     console.log("Shop ID:", shopId);
 
-    // -----------------------------
     // Save Announcement to Shopify Metafield
-    // -----------------------------
     const metafieldResponse = await admin.graphql(
       `
       mutation MetafieldsSet($metafields: [MetafieldsSetInput!]!) {
@@ -71,15 +65,12 @@ export async function action({ request }) {
             },
           ],
         },
-      }
+      },
     );
 
     const metafieldResult = await metafieldResponse.json();
 
-    console.log(
-      "Metafield Result:",
-      JSON.stringify(metafieldResult, null, 2)
-    );
+    console.log("Metafield Result:", JSON.stringify(metafieldResult, null, 2));
 
     return Response.json({
       success: true,
@@ -96,7 +87,7 @@ export async function action({ request }) {
       },
       {
         status: 500,
-      }
+      },
     );
   }
 }
